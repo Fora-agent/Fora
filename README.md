@@ -77,7 +77,7 @@ The web app at foraagent.xyz is built on top of this core and is not part of thi
 You need [Node.js](https://nodejs.org) 18 or newer.
 
 ```bash
-git clone https://github.com/<your-account>/fora.git
+git clone https://github.com/Fora-agent/Fora.git
 cd fora
 node examples/replay.mjs
 ```
