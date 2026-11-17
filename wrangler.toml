@@ -1,0 +1,17 @@
+name = "fora-api"
+main = "src/worker.js"
+compatibility_date = "2026-11-01"
+
+# Hourly price refresh (minute 5 of every hour)
+[triggers]
+crons = ["5 * * * *"]
+
+# Price history storage. Create one with:
+#   npx wrangler kv namespace create FORA_KV
+# then paste the id below.
+[[kv_namespaces]]
+binding = "FORA_KV"
+id = "REPLACE_WITH_YOUR_KV_NAMESPACE_ID"
+
+# Optional: a free DexPaprika key gives 7 days of backfill instead of 24h.
+#   npx wrangler secret put DEXPAPRIKA_KEY

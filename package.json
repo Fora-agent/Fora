@@ -1,0 +1,16 @@
+{
+  "name": "fora-agents",
+  "version": "0.1.0",
+  "description": "Fora: no-code trading agents for stock tokens on Robinhood Chain. Data layer and strategy engine.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://www.foraagent.xyz",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "replay": "node examples/replay.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "engines": { "node": ">=18" },
+  "devDependencies": { "wrangler": "^4.0.0" }
+}
