@@ -78,7 +78,7 @@ You need [Node.js](https://nodejs.org) 18 or newer.
 
 ```bash
 git clone https://github.com/Fora-agent/Fora.git
-cd fora
+cd Fora
 node examples/replay.mjs
 ```
 
